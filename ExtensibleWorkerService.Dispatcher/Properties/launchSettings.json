@@ -1,0 +1,11 @@
+﻿{
+  "profiles": {
+    "ExtensibleWorkerService.Dispatcher": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
