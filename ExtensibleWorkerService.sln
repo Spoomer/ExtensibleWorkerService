@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensibleWorkerService.Dis
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensibleWorkerService.Worker.Dummy", "ExtensibleWorkerService.Worker.Dummy\ExtensibleWorkerService.Worker.Dummy.csproj", "{A2FC4B8B-C649-4CDD-9F3C-3097BAF19092}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensibleWorkerService.WorkerSDK", "ExtensibleWorkerService.WorkerSDK\ExtensibleWorkerService.WorkerSDK.csproj", "{CE9AA7EE-62C7-4946-B6AD-41AE83A7CC22}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{A2FC4B8B-C649-4CDD-9F3C-3097BAF19092}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2FC4B8B-C649-4CDD-9F3C-3097BAF19092}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2FC4B8B-C649-4CDD-9F3C-3097BAF19092}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE9AA7EE-62C7-4946-B6AD-41AE83A7CC22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE9AA7EE-62C7-4946-B6AD-41AE83A7CC22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE9AA7EE-62C7-4946-B6AD-41AE83A7CC22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE9AA7EE-62C7-4946-B6AD-41AE83A7CC22}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

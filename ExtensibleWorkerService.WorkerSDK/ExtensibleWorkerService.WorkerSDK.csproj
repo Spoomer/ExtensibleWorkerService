@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>0.1.0</Version>
+    <Authors>Spoomer</Authors>
+    <PackageId>ExtensibleWorkerService.WorkerSDK</PackageId>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ExtensibleWorkerService.Core\ExtensibleWorkerService.Core.csproj" />
+  </ItemGroup>
+
+</Project>
