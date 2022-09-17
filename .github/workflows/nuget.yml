@@ -22,4 +22,4 @@ jobs:
       - name: register github packages
         run: dotnet nuget add source --username Spoomer --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/Spoomer/index.json"
       - name: push nuget
-        run: dotnet nuget push "ExtensibleWorkerService.WorkerSDK/bin/Release/ExtensibleWorkerService.WorkerSDK.*.nupkg"  --source "github"
+        run: dotnet nuget push "ExtensibleWorkerService.WorkerSDK/bin/Release/ExtensibleWorkerService.WorkerSDK.*.nupkg"  --source "github" --skip-duplicate
