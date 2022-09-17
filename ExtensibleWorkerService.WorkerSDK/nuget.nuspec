@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>ExtensibleWorkerService.WorkerSDK</id>
+    <version>0.1.2</version>
+    <title>$title$</title>
+    <authors>Spoomer</authors>
+    <owners>Spoomer</owners>
+    <license type="expression">MIT</license>
+    <description>SDK for creating Worker for the ExtensibleWorkerService</description>
+    <repository type="git" url="https://github.com/Spoomer/ExtensibleWorkerService" />
+    <dependencies>
+      <group targetFramework="netstandard2.0">
+        <dependency id="Microsoft.Extensions.Hosting.Abstractions" version="6.0.0" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\Release\netstandard2.0\ExtensibleWorkerService.*.dll" target="lib\netstandard2.0"/>
+  </files>
+</package>
