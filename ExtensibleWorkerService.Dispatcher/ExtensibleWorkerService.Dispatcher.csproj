@@ -10,7 +10,11 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
   </ItemGroup>
-
+  
+  <Target Name="MakeMyDir" AfterTargets="Build">
+    <MakeDir Directories="$(OutDir)Worker" />
+  </Target>
+  
   <ItemGroup>
     <None Update="Worker\**\*.*">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

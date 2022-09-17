@@ -5,8 +5,11 @@
     <Version>0.1.0</Version>
     <Authors>Spoomer</Authors>
     <PackageId>ExtensibleWorkerService.WorkerSDK</PackageId>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <RepositoryUrl>https://github.com/Spoomer/ExtensibleWorkerService</RepositoryUrl>
+    <Description>SDK for creating Worker for the ExtensibleWorkerService</Description>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>
