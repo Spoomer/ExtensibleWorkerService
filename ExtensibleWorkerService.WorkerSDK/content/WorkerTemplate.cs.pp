@@ -3,7 +3,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using ExtensibleWorkerService.Core;
 
-namespace ExtensibleWorkerService.WorkerSDK
+namespace $rootnamespace$
 {
     public class WorkerTemplate : IWorkerTask
     {

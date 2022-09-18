@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>ExtensibleWorkerService.WorkerSDK</id>
-    <version>0.1.2</version>
+    <version>0.1.3</version>
     <title>$title$</title>
     <authors>Spoomer</authors>
     <owners>Spoomer</owners>
@@ -17,5 +17,6 @@
   </metadata>
   <files>
     <file src="bin\Release\netstandard2.0\ExtensibleWorkerService.*.dll" target="lib\netstandard2.0"/>
+    <file src="content\WorkerTemplate.cs.pp" target="content\WorkerTemplate.cs.pp" />
   </files>
 </package>

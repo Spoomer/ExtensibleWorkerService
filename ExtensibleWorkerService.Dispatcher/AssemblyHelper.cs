@@ -25,11 +25,7 @@ internal static class AssemblyHelper
         List<string> assembliesToBeLoaded = new();
 
 
-        foreach (var assemblyFolder in assemblyFolders)
-        {
-            string[] assemblyPaths = Directory.GetFiles(Path.Combine(AppContext.BaseDirectory,assemblyFolder), "*.dll");
-            assembliesToBeLoaded.AddRange(assemblyPaths);
-        }
+        GetAssemblies(assemblyFolders, assembliesToBeLoaded);
 
         foreach (string path in assembliesToBeLoaded)
         {
@@ -45,5 +41,22 @@ internal static class AssemblyHelper
         }
 
         _loadedAssemblies = loadedAssemblies.ToArray();
+    }
+
+    private static List<string> GetAssemblies(string[] assemblyFolders, List<string> assembliesToBeLoaded)
+    {
+        foreach (var assemblyFolder in assemblyFolders)
+        {
+            DirectoryInfo folder = new(assemblyFolder);
+            string[] assemblyPaths =
+                Directory.GetFiles(Path.Combine(AppContext.BaseDirectory, assemblyFolder), "*.dll");
+            assembliesToBeLoaded.AddRange(assemblyPaths);
+            var subfolders = folder.GetDirectories()
+                .Select(x => x.FullName)
+                .ToArray();
+            return GetAssemblies(subfolders, assembliesToBeLoaded);
+        }
+
+        return assembliesToBeLoaded;
     }
 }
