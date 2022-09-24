@@ -9,7 +9,7 @@ public static class WorkerServiceCollectionExtensions
     public static IServiceCollection AddWorkerServices(this IServiceCollection serviceCollection,
         IConfiguration configuration)
     {
-        IList<Assembly> assemblies = AssemblyHelper.GetLoadedAssemblies(configuration["WorkerDirectory"]);
+        IList<Assembly> assemblies = AssemblyHelper.GetLoadedAssemblies(configuration[ConfigConstants.WorkerDirectory]);
         IEnumerable<Type> servicesToBeRegistered = assemblies
             .SelectMany(assembly => assembly.GetTypes())
             .Where(type => type.IsAssignableTo(typeof(IWorkerTask)) && type.IsAssignableTo(typeof(IHostedService)));
